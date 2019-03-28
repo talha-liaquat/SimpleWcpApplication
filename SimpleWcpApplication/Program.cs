@@ -13,7 +13,7 @@ namespace SimpleWcpApplication
     {
         static void Main(string[] args)
         {
-            var host = new WebServiceHost(typeof(MyService), new Uri("http://localhost:9696"));
+            var host = new WebServiceHost(typeof(MyService), new Uri("http://localhost:9595"));
             var endpoint = host.AddServiceEndpoint(typeof(IMyService), new WebHttpBinding(), "api");
             host.Open();
             Console.Read();
