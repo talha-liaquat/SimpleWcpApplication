@@ -10,7 +10,7 @@ namespace SimpleWcpApplication
     {
         public string Hello(string name)
         {
-            return $"Hello {name} from container!";
+            return "Hello " + name + " from container!";
         }
     }
 }
